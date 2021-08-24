@@ -1,0 +1,50 @@
+body{
+    position: absolute;
+}
+.header{
+    text-align: center;
+    background-color: rgb(80, 151, 151);
+    width: 100vw;
+}
+.links li{
+    margin-top: 20px;
+    margin-left: -40px;
+}
+.social a{
+    margin-left: 10px;
+}
+.section{
+    display: flex;
+    background-color: rgb(189, 167, 151);
+    width: 100vw;
+    height: 100vh;
+}
+.section2{
+    text-align: center;
+    width: 50vw;
+}
+a{
+    text-decoration: none;
+} 
+.section2 img{
+    height: 30vh;
+}
+.section1{
+    position: relative;
+    bottom: 180px;
+    font-style: italic;
+    font-size: 2rem;
+    width: 40vw;
+    height: 100vh;
+    background-color: rgb(104, 163, 155);
+}
+a:hover{
+    color: chocolate;
+}
+.btn{
+    background-color: cyan;
+    float: left;
+}
+.hidden{
+    display: none;
+}
