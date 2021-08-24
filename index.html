@@ -9,7 +9,7 @@
 </head>
 <body>
     <header> 
-        <div class="header">
+        <div class="header" id="hea">
             <button id="btn-menu" class="btn">Menu</button>
             <img src="" alt="farajah.img">
             <h1>Farajah Foods</h1>
@@ -24,27 +24,131 @@
             <section class="section1">
                 <nav>
                     <ul type="none" class="links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#menu">Our Menu</a></li>
-                        <li><a href="deals.html">Hot Deals</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
+                        <li><a id ="hom" href="index.html">Home</a></li>
+                        <li><a id="our" href="#menu">Our Menu</a></li>
+                        <li><a id="dea" href="#deals">Hot Deals</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
+               <a href="#hea"><button id="float-btn">Back to top</button></a> 
             </section>
-                <section class="hidden section2">
+                <section class="section2">
                     <h1 class="foods">About <span class="food">Us</span></h1>
                     <img src="assets/eating_together.png"  alt="Eat together">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam obcaecati fugiat, eos sunt voluptatem rerum accusantium in architecto ea quos aliquid modi earum distinctio iure, nisi officia, at alias harum tenetur odio officiis sapiente ratione aliquam. Praesentium accusantium minus dolor?</p>
                 </section>
-                <section id="menu" class="">
-                    <article>
-                        <img id="img" src="">
-                        <h1 id="title"></h1>
-                        <p id="price"></p>
-                        <p id="text"></p>
-                    </article>
+                <section id="menu" class="cen">
+                    <h1>Our <span class="food">Menu</span></h1>
+        <section class="row">
+        <article>
+            <div class="row1">
+                <img src="assets/image 1.png" alt="food name" >
+                <h1>food name</h1>
+                <p class="price">Price: $15 </p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis accusamus ex voluptate quidem, unde aut sed iusto quae dolor.</p>
+        </article>
+        <article>
+            <div class="row1">
+                <img src="assets/image 1.png" alt="food name" >
+                <h1>food name</h1>
+                <p class="price">Price: $15 </p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis accusamus ex voluptate quidem, unde aut sed iusto quae dolor.</p>
+        </article>
+        <article>
+            <div class="row1">
+                <img src="assets/image 1.png" alt="food name" >
+                <p class="price">Price: $15 </p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis accusamus ex voluptate quidem, unde aut sed iusto quae dolor.</p>
+        </article>
+        <article>
+            <div class="row1">
+                <img src="assets/image 1.png" alt="food name" >
+                <p class="price">Price: $15 </p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis accusamus ex voluptate quidem, unde aut sed iusto quae dolor.</p>
+        </article>
                 </section>
+                </section>
+                <section class="art">
+                    <h1 class="cen">Hot <span class="food">Deals</span></h1>
+                    <section class="row">
+                    <article>
+                        <div class="row1">
+                            <img src="assets/image 1.png" alt="food name" >
+                            <h1>food name</h1>
+                            <p class="price">Price: $15 </p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis accusamus ex voluptate quidem, unde aut sed iusto quae dolor.</p>
+                    </article>
+                        <article>
+                            <div class="row1">
+                                <img src="assets/image 1.png" alt="food name" >
+                                <h1>food name</h1>
+                                <p class="price">Price: $15 </p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis accusamus ex voluptate quidem, unde aut sed iusto quae dolor.</p>
+                        </article>
+                        <article>
+                            <div class="row1">
+                                <img src="assets/image 1.png" alt="food name" >
+                                <h1>food name</h1>
+                                <p class="price">Price: $15 </p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis accusamus ex voluptate quidem, unde aut sed iusto quae dolor.</p>
+                        </article>
+                            <article>
+                                <div class="row1">
+                                    <img src="assets/image 1.png" alt="food name" >
+                                    <h1>food name</h1>
+                                    <p class="price">Price: $15 </p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis accusamus ex voluptate quidem, unde aut sed iusto quae dolor.</p>
+                            </article>
+                            <article>
+                                <div class="row1">
+                                    <img src="assets/image 1.png" alt="food name" >
+                                    <h1>food name</h1>
+                                    <p class="price">Price: $15 </p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis accusamus ex voluptate quidem, unde aut sed iusto quae dolor.</p>
+                            </article>
+                    </section>
+                    </section>
         </div>
+        <div id="contacts">
+            <h1 class="cen">Contact <span class="food">Us</span></h1>
+            <div class="contacts">
+                <section class="form">
+                    <h1>Comment/Feedback</h1>
+        <p>Full name:</p>
+        <input type="text" id="name" placeholder="">
+        <p>Email:</p>
+        <input type="email" id="email" placeholder="">
+        <p>Comment:</p>
+        <textarea type="text" cols="30" rows="7"></textarea><br>
+        <button>Send</button>
+                </section>
+                <section>
+                    <h2>Contact</h2>
+                    <p>Phone: 0700000000</p>
+                    <p>Email: farajahfoods@gmail.com</p>
+                    <br>
+                    <h2>Working Hours</h2>
+                    <p>Mon-Fri: 9:00am-6:00pm</p>
+                    <p>Sat & Sun: 9:00am-8:00pm</p>
+                </section>
+                <section>
+                    <h1>Social Media</h1>
+                    <p><a href=""><img src="images/insta1.jpg"></a></p>
+                    <p><a href=""><img src="images/whatsapp1.jpg"></a></p>
+                    <p><a href=""><img src="images/twitter1.jpg"></a></p>
+                </section>
+            </div>
+        </div>
+        
         
         <script src="app.js"></script>
 </body>

@@ -1,36 +1,46 @@
-const menu = [
-    {   id:1,
-        name: "pancake",
-        category: "breakfast",
-        img:"images/review.jpg",
-        price: "$15",
-        text:
-        "I am a junior developer working with Fintech Indutry Company. The services offered here are top class and necessary for one's future growth in tech industry."
-    },
-]    
 
-var img =document.getElementById('img');
-var price =document.getElementById('price');
-var title =document.getElementById('title');
+var menu = document.getElementById('menu');
+const menuList = menu.classList;
+var dealsPage = document.querySelector('.art')
+const art = dealsPage.classList;
+var home = document.querySelector('.section2');
+const homePage = home.classList;
 
+
+var link = document.getElementById('our');
+var deals = document.getElementById('dea');
+var homeLink = document.getElementById('hom');
 
 var links = document.querySelector('.section1');
 var btn = document.getElementById('btn-menu');
-var dynamic = document.querySelector('.section2')
 
 let current = 0;
 
 btn.addEventListener('click', function(){
-    var hid=links.classList;
+    var hid = links.classList;
     hid.toggle('hidden')
 });
 
-
+link.addEventListener('click',function(){
+    menuList.remove('hidden');
+    art.add('hidden');
+    homePage.add('hidden');
+});
+/*homeLink.addEventListener('click',function(){
+   menuList.add('hidden');
+    homePage.add('hidden');
+    art.add('hidden');
+});*/ 
+deals.addEventListener('click', function(){
+    menuList.add('hidden');
+    homePage.add('hidden');
+    art.remove('hidden');
+});
 window.addEventListener('DOMContentLoaded', function(){
-    let item = menu[current]
-    img.src = item.img
-    title.textContent = item.name
-    price.textContent = item.price
-    });
-    
+    menuList.add('hidden');
+    homePage.remove('hidden');
+    art.add('hidden');
+});
+
+
 
